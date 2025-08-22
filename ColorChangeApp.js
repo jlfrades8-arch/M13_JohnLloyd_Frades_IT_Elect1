@@ -7,11 +7,11 @@ export default function ColorChangeApp({setBgColor}){
     <View style={styles.buttonRow}>
     <Button title = "White" onPress={() => setBgColor('White')} />
     
-     <View style = {{ width: 10 }}/>
+     <View style = {{ width: 11 }}/>
      
     <Button title = "Light Green" onPress={() => setBgColor('#90EE90')} />
     
-    <View style = {{ width: 10 }}/>
+    <View style = {{ width: 11 }}/>
     
     <Button title = "Light Blue" onPress={() => setBgColor('#ADD8E6')} />
     </View>
