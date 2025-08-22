@@ -12,7 +12,7 @@ export default function CounterApp({bgColor}){
     <View style={styles.buttonRow}>
     <Button title = "Increment" onPress={() => setCount(count + 1)} />
     
-    <View style = {{ height: 10 }}/>
+    <View style = {{ height: 11 }}/>
     
     <Button title = "Decrement" onPress={() => setCount(count - 1)} />
     </View>
