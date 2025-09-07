@@ -1,16 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import CounterApp from './CounterApp'
-import ColorChangeApp from './ColorChangeApp'
-import React, { useState } from 'react';
+import Mess from './Mess';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-export default function App(){
-const [bgColor, setBgColor] = useState("white");
-
+const App = () => {
   return (
-    <View style={[styles.container, { backgroundColor: bgColor}]}>
-      <CounterApp bgColor/>
-      <ColorChangeApp setBgColor = {setBgColor}/>
+    <View style={styles.container}>
+      <Text>App</Text>
+      <Mess />
     </View>
   );
 };
@@ -22,3 +18,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+export default App;
