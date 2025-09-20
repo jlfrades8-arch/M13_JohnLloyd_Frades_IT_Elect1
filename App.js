@@ -1,4 +1,4 @@
-import SampleComment from './SampleComment';
+im0port SampleComment from './SampleComment';
 import Mess from './Mess';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';

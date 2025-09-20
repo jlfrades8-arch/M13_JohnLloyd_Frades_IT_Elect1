@@ -58,7 +58,7 @@ export default function Mess() {
         <View style={styles.inputContainer}>
           <TextInput
             style={styles.textInput}
-            placeholder="Type a message"
+            placeholder="Type here"
             value={inputText}
             onChangeText={setInputText}
             multiline
@@ -76,23 +76,27 @@ const styles = StyleSheet.create({
   container: {
     width: "95%",
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
   },
   innerContainer: {
     flex: 1,
     justifyContent: 'flex-end',
   },
   messageBubble: {
-    backgroundColor: '#0078fe',
-    padding: 25,
+
+    backgroundColor: 'yellowgreen',
+    padding: 15,
     marginVertical: 4,
-    marginHorizontal: 12,
+    marginHorizontal: 15,
     borderRadius: 12,
-    alignSelf: 'flex-end',   // use flex-start for received messages
-    maxWidth: "140%",         // ✅ keeps bubble readable
+    alignSelf: 'flex-end',  
+    maxWidth: "140%",
+    
+    
+    
   },
   messageText: {
-    color: '#fff',
+    color: 'white',
     fontSize: 16,
   },
   inputContainer: {
@@ -100,30 +104,31 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     borderTopWidth: 1,
-    borderColor: '#ddd',
     backgroundColor: '#f9f9f9',
+    borderColor: 'yellowgreen',
+    
   },
   textInput: {
     flex: 1,
     maxHeight: 100,
     paddingHorizontal: 12,
     paddingVertical: 20,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     borderRadius: 20,
     fontSize: 15,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: 'yellowgreen',
   },
   sendButton: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0078fe',
+    backgroundColor: 'green',
     borderRadius: 20,
     paddingHorizontal: 16,
     marginLeft: 8,
   },
   sendButtonText: {
-    color: '#fff',
+    color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
   },

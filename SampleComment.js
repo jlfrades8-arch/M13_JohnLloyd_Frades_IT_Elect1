@@ -21,13 +21,13 @@ export default function SampleComment() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.header}>                     Comment App                   </Text>
+      <Text style={styles.header}>                                                                   </Text>
 
       {/* Comment input */}
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Write a comment...."
+          placeholder="Write a comment..."
           value={comment}
           onChangeText={setComment}
         />
@@ -53,7 +53,7 @@ export default function SampleComment() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: 22,
     backgroundColor: "#F5F5F5",
   },
   header: {
@@ -69,31 +69,32 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     borderWidth: 1,
-    borderColor: "#CCC",
+    borderColor: "yellowgreen",
     borderRadius: 8,
     padding: 10,
-    backgroundColor: "#FFF",
+    backgroundColor: "white",
   },
   button: {
     marginLeft: 10,
-    backgroundColor: "#007AFF",
+    backgroundColor: "green",
     paddingHorizontal: 15,
     borderRadius: 8,
     justifyContent: "center",
   },
   buttonText: {
-    color: "#FFF",
+    color: "white",
     fontWeight: "bold",
   },
   commentBox: {
-    backgroundColor: "#FFF",
+    backgroundColor: "yellowgreen",
     padding: 12,
     borderRadius: 8,
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: "#DDD",
+    borderColor: "yellow",
   },
   commentText: {
     fontSize: 16,
+    color: 'white',
   },
 });
