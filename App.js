@@ -1,22 +1,17 @@
-import Mess from './Mess';
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, ScrollView } from 'react-native';
+import CounterApp from './CounterApp';
+import ColorChangerApp from './ColorChangerApp';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>App</Text>
-      <Mess />
-    </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <CounterApp />
+        <ColorChangerApp />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default App;
